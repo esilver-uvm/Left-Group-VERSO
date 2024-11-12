@@ -6,7 +6,7 @@ int main()
     int a = 0, b = 1;
     int sum_even = 0;
     //loop through 4 million iterations 
-    while (b < 4000000) {
+    while (b != 4000000) {
         //if iteration is even, add current fibbonocci to sum
         if (b % 2 == 0) {
             sum_even += b;
