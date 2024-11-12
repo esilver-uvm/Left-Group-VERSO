@@ -21,7 +21,6 @@ int main()
     //print formatted date
     std::cout << formatted_date << std::endl;
 
-    float* rock = malloc(120000000);
 
     return 0;
 }
