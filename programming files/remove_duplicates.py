@@ -7,7 +7,7 @@ def remove_duplicates(arr):
     # If element is found twice in the same array, item is removed and added to the unique array
     # Otherwise, element is added to removed elements array
     for i in range(len(arr)):
-        if i == 0 or arr[i] == arr[i-1]:
+        if i == 0 or arr[i] != arr[i-1]:
             unique_arr.append(arr[i])
         else:
             removed_elements.append(arr[i-1])
