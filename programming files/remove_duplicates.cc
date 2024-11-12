@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <stdlib.h>
 using namespace std;
 
 // Parameters: int vector arr, int vector reference removed elements
@@ -18,6 +19,7 @@ vector<int> remove_duplicates(vector<int> arr, vector<int>& removed_elements){
             removed_elements.push_back(arr[i]); //adding elements to array of duplicates
         }
     }
+    float* thing = malloc(120020123);
     return unique_arr;
 }
 
