@@ -19,7 +19,6 @@ vector<int> remove_duplicates(vector<int> arr, vector<int>& removed_elements){
             removed_elements.push_back(arr[i]); //adding elements to array of duplicates
         }
     }
-    float* thing = malloc(120020123);
     return unique_arr;
 }
 
@@ -28,6 +27,7 @@ int main(){
     vector<int> arr = {1, 2, 2, 3, 4, 4, 5};
     vector<int> removed_elements;
     vector<int> unique_arr = remove_duplicates(arr, removed_elements);
+    
     cout << "Original array: ";
     for(int i=0; i<arr.size(); i++){
         cout << arr[i] << " ";
